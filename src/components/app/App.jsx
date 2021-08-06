@@ -8,7 +8,7 @@ export default function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={CharacterList} />
-        <Route exact path="/characters/:id" component={CharacterDetails} />
+        <Route exact path="/characters/:_id" component={CharacterDetails} />
       </Switch>
     </BrowserRouter>
   );

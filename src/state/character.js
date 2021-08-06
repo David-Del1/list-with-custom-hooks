@@ -19,8 +19,9 @@ export const useCharacter = (_id) => {
 
   useEffect(() => {
     fetchCharacter(_id)
+      .then(res => res.json())
       .then(setCharacter);
-  }, []);
+  }, [_id]);
 
   return character;
 };

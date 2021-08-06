@@ -4,8 +4,8 @@ import { useCharacter } from '../../state/character';
 
 function CharacterDetails() {
   const { _id } = useParams();
+  console.log(_id);
   const character = useCharacter(_id);
-  console.log(character);
   if(!character) return <h1>Loading...</h1>;
   
   return (
